@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="161.332" errors="0" skipped="0" tests="1" name="com.DFATTests.Firefox.FullSiteChromeLoremIpsumTest">
+<testsuite failures="0" time="172.699" errors="0" skipped="0" tests="1" name="com.DFATTests.Firefox.FullSiteChromeLoremIpsumTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre7\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="D:\myWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5568953582031062618.tmp"/>
+    <property name="classworlds.conf" value="D:\myWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf791114552734507467.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Extensis\Universal Type Client\;C:\Program Files\Java\jdk1.7.0_51\bin;D:\apache-maven-3.2.3\bin;D:\adt-bundle-windows-x86_64-20140702\sdk\tools;D:\adt-bundle-windows-x86_64-20140702\sdk\platform-tools;D:\ChromeDriver;C:\Users\gsharma\AppData\Local\Spoon\Cmd;C:\Program Files (x86)\Mozilla Firefox;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="149.428" classname="com.DFATTests.Firefox.FullSiteChromeLoremIpsumTest" name="A_DFAT_Crawler"/>
+  <testcase time="159.488" classname="com.DFATTests.Firefox.FullSiteChromeLoremIpsumTest" name="A_DFAT_Crawler"/>
 </testsuite>
