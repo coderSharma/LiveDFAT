@@ -19,7 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,10 +27,10 @@ import org.openqa.selenium.support.ui.Select;
 
 public abstract class BaseClass {
 
-	static WebDriver driver;
+	protected static WebDriver driver;
 	protected static String workingDir = System.getProperty("user.dir").replace("\\","/");
-	protected static String cvFilePath= workingDir+"/src/com/DFATTestData/UploadCV.exe";
-	protected static String picFilePath=workingDir+"/src/com/DFATTestData/UploadImage.exe";
+	protected static String cvFilePath= workingDir+"/src/test/resource/com/DFATTestData/UploadCV.exe";
+	protected static String picFilePath=workingDir+"/src/test/resource/com/DFATTestData/UploadImage.exe";
 	String ReturnText;
 	static DateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy");
 	static Date date = new Date();
@@ -54,9 +54,10 @@ public abstract class BaseClass {
 
 	public static WebDriver browserSetup(String browserType)
 	{
+		System.setProperty("webdriver.chrome.driver","src/test/resource/com/DFATTestData/chromedriver.exe");
 		if (browserType.contentEquals("firefox"))
 		{
-			driver	= new FirefoxDriver();
+			driver	= new ChromeDriver();
 		}
 		else if (browserType.contentEquals("chrome"))
 		{
