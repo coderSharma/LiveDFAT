@@ -52,7 +52,7 @@ public class IntelligenceOfficerForm {
 		CurrentPath=BaseClass.createDateFolder(path);
 		ResultReport=CurrentPath+"Screenshot.html";
 		BaseClass.SOHTMLGENERAL(ResultReport);
-		driver = RolesAndVacanciesPage.DFATPageChrome(driver);
+		driver = RolesAndVacanciesPage.browserStackSetup("chrome");
 		
 	}
 
