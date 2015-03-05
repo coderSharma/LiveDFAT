@@ -246,11 +246,11 @@ public abstract class BaseClass {
 				if(i==0)
 				{
 					System.out.println("Environment Setup Passed");
-					reportContent="<tr BGCOLOR= \""+colour+"\"><td>1</td><td>Environment & Browser Setup</td><td><b>Passed</b></td><td><img src=\"../../images/pass.gif\"></td></tr>";
+					reportContent="<tr BGCOLOR= \""+colour+"\"><td>1</td><td>Environment & Browser Setup</td><td><b>Passed</b></td><td><img src=\"../../../../images/pass.gif\"></td></tr>";
 				}
 				else {
 					System.out.println(testCaseNames.get(i-1)+"Passed");
-					reportContent="<tr BGCOLOR= \""+colour+"\"><td>"+(i+1)+"</td><td>"+testCaseNames.get(i-1)+"</td><td><b>Passed</b></td><td><img src=\"../../images/pass.gif\"></td></tr>";
+					reportContent="<tr BGCOLOR= \""+colour+"\"><td>"+(i+1)+"</td><td>"+testCaseNames.get(i-1)+"</td><td><b>Passed</b></td><td><img src=\"../../../../images/pass.gif\"></td></tr>";
 				}
 
 			if(resultArray.get(i).equals(false))
@@ -258,12 +258,12 @@ public abstract class BaseClass {
 				if(i==0)
 				{
 					System.out.println("Environment Setup Failed");
-					reportContent="<tr BGCOLOR= \"red\"><td>"+(i+1)+"</td><td>Environment & Browser Setup</td><td><Font color =\"yellow\"><b>Failed</b></font></td><td><img src=\"../../images/bullet.gif\"></td></tr>";
+					reportContent="<tr BGCOLOR= \"red\"><td>"+(i+1)+"</td><td>Environment & Browser Setup</td><td><Font color =\"yellow\"><b>Failed</b></font></td><td><img src=\"../../../../images/bullet.gif\"></td></tr>";
 				}
 				else {
 
 					System.out.println(testCaseNames.get(i-1)+"Failed");
-					reportContent="<tr BGCOLOR= \""+colour+"\"><td>1</td><td>"+testCaseNames.get(i-1)+"</td><td><Font color =\"red\"><b>Failed</b></font></td><td><img src=\"../../images/bullet.gif\"></td></tr>";
+					reportContent="<tr BGCOLOR= \""+colour+"\"><td>1</td><td>"+testCaseNames.get(i-1)+"</td><td><Font color =\"red\"><b>Failed</b></font></td><td><img src=\"../../../../images/bullet.gif\"></td></tr>";
 				}
 			}
 
