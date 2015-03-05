@@ -32,7 +32,7 @@ public class IntelligenceOfficerFormLoginTest {
 	static String ResultReport;
 	static String reportContent="";
 	boolean answer ;
-	static WebDriver driver;
+	protected static WebDriver driver;
 	static List<Boolean> Results = new ArrayList<Boolean>();
 	static List<String> TcaseName = new ArrayList<String>();
 	static String path="src/com/DFATReports/";
@@ -47,7 +47,7 @@ public class IntelligenceOfficerFormLoginTest {
 		CurrentPath=BaseClass.createDateFolder(path);
 		ResultReport=CurrentPath+"Screenshot.html";
 		BaseClass.SOHTMLGENERAL(ResultReport);
-		driver = RolesAndVacanciesPage.DFATPageChrome(driver);
+		driver = RolesAndVacanciesPage.browserStackSetup("chrome");
 		
 	}
 

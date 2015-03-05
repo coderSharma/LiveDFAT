@@ -31,6 +31,8 @@ public abstract class BaseClass {
 	protected static String workingDir = System.getProperty("user.dir").replace("\\","/");
 	protected static String cvFilePath= workingDir+"/src/test/resource/com/DFATTestData/UploadCV.exe";
 	protected static String picFilePath=workingDir+"/src/test/resource/com/DFATTestData/UploadImage.exe";
+	public String url="https://www.asis.gov.au/Careers/Roles-and-Vacancies.html";
+	public String fullurl="https://www.asis.gov.au";
 	String ReturnText;
 	static DateFormat dateFormat = new SimpleDateFormat("ddMMMyyyy");
 	static Date date = new Date();
@@ -74,13 +76,13 @@ public abstract class BaseClass {
 		return driver;
 	}
 
-	public static WebDriver browserStackSetup(String browserType) throws MalformedURLException {
+	public WebDriver browserStackSetup(String browserType) throws MalformedURLException, InterruptedException {
 		DesiredCapabilities caps = new DesiredCapabilities();	
 		if (browserType.contentEquals("chrome")) {
 			caps.setCapability("browser", "Chrome");
-			caps.setCapability("browser_version", "36.0");
+			caps.setCapability("browser_version", "39.0");
 			caps.setCapability("os", "Windows");
-			caps.setCapability("os_version", "7");
+			caps.setCapability("os_version", "8");
 
 		} else if (browserType.contentEquals("firefox")) {
 			caps.setCapability("browser", "Firefox");
@@ -96,9 +98,11 @@ public abstract class BaseClass {
 		}
 		caps.setCapability("resolution", "1024x768");
 		caps.setCapability("browserstack.debug", "true");
-		driver = new RemoteWebDriver(new URL("http://gauravsharma17:xYk9UH7Gh96zXx8dQecU@hub.browserstack.com/wd/hub"),caps);
+		driver = new RemoteWebDriver(new URL("http://vjqa:z5fjTxhgdi3xda1YPAm2@hub.browserstack.com/wd/hub"),caps);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.get(url);
+		Thread.sleep(5000);
 		return driver;
 	}
 
